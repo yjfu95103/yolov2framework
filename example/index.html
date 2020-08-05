@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="d3.v4.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+  <style>
+    body { 
+      margin:0;
+      position:fixed;
+      top:0;right:0;bottom:0;left:0;
+    	font-family: Helvetica, Arial;
+      /* background-color: blanchedalmond; */
+      /* background-color: #0b161c; */
+   	}
+
+    #container {
+      position: relative;
+      z-index: 100;
+    }
+    .panel {
+      width: 100%;
+      padding-left: 20px;
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+    }
+    .h2{
+      padding-left: 20px;
+    }
+
+    /* .convImg:hover {
+      fill: #6beaf32f;
+      opacity: 0.6;
+      transform:scale(0.5,0.5);
+    }
+
+    .maxpoolImg:hover {
+      fill: #6beaf32f;
+      position:relative;
+      opacity: 0.6;
+      transform:scale(0.5,0.5);
+      top:"";
+      left:"";
+    }
+
+    .image:hover {
+      fill: #6beaf32f;
+      position:relative;
+      opacity: 0.6;
+      transform:scale(0.5,0.5);
+    }  */
+
+    .ImgInline {
+      display: inline-block;
+    }  
+  </style>
+
+   <script src="darknet19_hover.js"></script>
+   <!-- <script src="conv.js"></script> -->
+</head>
+
+<body>
+  <div id="container" style="height: 100vh; overflow: scroll">
+    <div id="content">
+      <!-- darknet 19 svg -->
+      <div class="darknetSvg" id="darknet"></div>   
+      <div id="imgscale"></div>
+      <!-- convolution -->
+      <div class="convSvg" id="conv"></div>  
+      <!-- tensorflow cube -->
+
+    </div>         
+  </div>
+
+ 
+  <!-- <script src="conv.js"></script> -->
+
+
+
+</body>
